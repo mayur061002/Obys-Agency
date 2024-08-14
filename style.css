@@ -11,6 +11,18 @@ html,body{
     width: 100%;
 }
 
+#cursor{
+    height: 2.5vw;
+    width: 2.5vw;
+    /* background-color: #fff; */
+    border-radius: 50%;
+    border: 2px solid #ffffff98;
+    position: fixed;
+    z-index: 9999;
+    transform: translate(-50%, -50%);
+    mix-blend-mode: difference;
+}
+
 #loader{
     height: 100%;
     width: 100%;
@@ -105,4 +117,65 @@ html,body{
     background-color: #151515;
     /* background-color: red; */
 
+}
+
+#page1 #nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3vw 6vw;
+}
+
+#nav-part2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3vw;
+}
+
+#nav-part2 h4{
+    font-weight: 100;
+    font-size: 1vw;
+}
+
+
+.page1-heading{
+    /* background-color: red; */
+    width: 72%;
+    margin-left: 28%;
+    height: fit-content;
+    overflow: hidden;
+    position: relative;
+    z-index: 999;
+}
+
+.page1-heading:nth-child(2){
+    margin-top: 18vh;
+}
+
+.page1-heading h1{
+    font-size: 7.3vw;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 7.2vw;
+    letter-spacing: .3vw;
+}
+
+#hero3{
+    display: flex;
+    
+}
+
+.page1-heading h2{
+    font-size: 7.3vw;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 7.2vw;
+    letter-spacing: .3vw;
+}
+
+.page1-heading h2:hover{
+    -webkit-text-stroke: 1px #fff;
+    color: transparent;
+    font-weight: 500;
 }
