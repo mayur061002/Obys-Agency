@@ -93,6 +93,50 @@ function cursorAnimation(){
       
     Shery.makeMagnet("#nav-part2 h4", {
     });
+
+    var videocontainer = document.querySelector("#vid-container")
+    var video = document.querySelector("#vid-container video")
+    videocontainer.addEventListener("mouseenter", function(){
+        videocontainer.addEventListener("mousemove", function(dets){
+            gsap.to(".mousefollower", {
+                opacity: 0
+            })
+            gsap.to("#video-cursor", {
+                left:dets.x -500,
+                y:dets.y -100
+            })
+        })
+    })
+    videocontainer.addEventListener("mouseleave", function(){
+        gsap.to(".mousefollower", {
+            opacity: 1
+        })
+        gsap.to("#video-cursor",{
+            left: "40%",
+            top: "0%"
+        })
+    })
+
+    var flag = 0
+    videocontainer.addEventListener("click", function(){
+        if(flag == 0){
+            video.play(),
+            video.style.opacity = 1,
+            document.querySelector("#video-cursor").innerHTML = `<i class="ri-pause-mini-line"></i>`
+            gsap.to("#video-cursor", {
+                scale: .5
+            })
+            flag = 1
+        }else{
+            video.pause(),
+            video.style.opacity = 0,
+            document.querySelector("#video-cursor").innerHTML = `<i class="ri-play-mini-fill"></i>`
+            gsap.to("#video-cursor", {
+                scale: 1
+            })
+            flag = 0
+        }
+    })
 }
 
 
@@ -110,3 +154,8 @@ locomotiveanimation();
 loader();
 cursorAnimation();
 sheryanimation();
+
+
+document.querySelector("mousemove", function(dets){
+    
+})
