@@ -139,13 +139,6 @@ body{
 }
 
 
-#flag{
-    height: 25vw;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
 .page1-heading{
     /* background-color: red; */
     width: 72%;
@@ -173,7 +166,7 @@ body{
 
 
 #hero1::before{
-    content: "01";
+    content: "";
     position: absolute;
     font-size: 3.2vw;
     font-weight: 400;
@@ -182,9 +175,19 @@ body{
     top: 1%;
 }
 
+#flag{
+    height: 25vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
 
 #hero3{
     display: flex;
+    /* background-color: red; */
+    z-index: 9999;
     
 }
 
