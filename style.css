@@ -15,17 +15,13 @@ body{
     overflow-x: hidden;
 }
 
-#cursor{
-    height: 2.5vw;
-    width: 2.5vw;
-    /* background-color: #fff; */
-    border-radius: 50%;
-    border: 2px solid #ffffff98;
-    position: fixed;
-    z-index: 9999;
-    transform: translate(-50%, -50%);
+.mouseFollower{
+    scale: 2;
+    border: 2px solid #fff;
+    background-color: #fff;
     mix-blend-mode: difference;
 }
+
 
 #loader{
     height: 100%;
