@@ -82,7 +82,7 @@ function loader() {
 }
 
 
-function cursorAnimation(){
+function cursorAnimation() {
     Shery.mouseFollower({
         skew: true,
         ease: "cubic-bezier(0.23, 2, 0.320, 1)",
@@ -149,29 +149,34 @@ function sheryanimation() {
 };
 
 
+function flaganimation() {
+
+    document.addEventListener("mousemove", function(dets){
+        gsap.to("#flag", {
+            x:dets.x,
+            y:dets.y
+        })
+    })
+    
+    
+    document.querySelector("#hero3").addEventListener("mouseenter", function(){
+        gsap.to("#flag", {
+            opacity: 1
+        })
+    })
+    
+    document.querySelector("#hero3").addEventListener("mouseleave", function(){
+        gsap.to("#flag", {
+            opacity: 0
+        })
+    })
+};
+
 
 locomotiveanimation();
 loader();
 cursorAnimation();
 sheryanimation();
+flaganimation();
 
 
-document.addEventListener("mousemove", function(dets){
-    gsap.to("#flag", {
-        x:dets.x,
-        y:dets.y
-    })
-})
-
-
-document.querySelector("#hero3").addEventListener("mouseenter", function(){
-    gsap.to("#flag", {
-        opacity: 1
-    })
-})
-
-document.querySelector("#hero3").addEventListener("mouseleave", function(){
-    gsap.to("#flag", {
-        opacity: 0
-    })
-})
