@@ -79,7 +79,7 @@ function loader() {
         stagger: 0.2
     })
 
-}
+};
 
 
 function cursorAnimation() {
@@ -137,7 +137,7 @@ function cursorAnimation() {
             flag = 0
         }
     })
-}
+};
 
 
 function sheryanimation() {
