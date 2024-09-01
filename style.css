@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+
 *{
     margin: 0;
     padding: 0;
@@ -140,6 +143,7 @@ body{
 #nav-part2 h4{
     font-weight: 100;
     font-size: 1vw;
+    cursor: pointer;
 }
 
 #logo{
@@ -699,6 +703,7 @@ body{
 #footer-div h5{
     font-size: 1.6vw;
     font-weight: 500;
+    cursor: pointer;
 }
 
 #footer>h5{
@@ -706,10 +711,18 @@ body{
     font-size: 1.1vw;
 }
 
+#footer>h5 span{
+    font-family: "satisfy";
+    letter-spacing: .1vw;
+    cursor: pointer;
+}
+
 ._canvas_container{
     z-index: 999999 !important;
     pointer-events: none;
 }
+
+
 
 
 /* ------------------------------------- Responsive code start --------------------------------------------- */
@@ -1172,10 +1185,6 @@ body{
     }
 
 
-
-
-
-
     #footer{
         min-height: 100vh;
         width: 100%;
@@ -1213,20 +1222,6 @@ body{
         margin: 7vw 0;
         margin-left: 0vw;
     }
-
-  
-   
-    
-    
-
-
-
-
-
-
-
-   
-    
     
     
     #footer-div{
@@ -1242,7 +1237,6 @@ body{
     
     .box{
         width: 50%;
-        /* background-color: red; */
     }
     
     #footer-div h6{
