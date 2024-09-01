@@ -1097,79 +1097,79 @@ body{
     }
     
     
-#page5{
-    min-height: 50vh;
-    width: 100%;
-    background-color: #151515;
-    position: relative;
-    margin-top: -28vh;
+    #page5{
+        min-height: 50vh;
+        width: 100%;
+        background-color: #151515;
+        position: relative;
+        margin-top: -28vh;
 
-}
-.elems{
-
-    /* background-color: red; */
-    white-space: nowrap;
-    overflow-x: hidden ;
-}
-
-.elems h1{
-    font-size: 9.5vw;
-    -webkit-text-stroke: 1px #fff;
-    color: transparent;
-    font-weight: 500;
-    text-transform: uppercase;
-    display: inline-block;
-    margin-right: 2vw;
-    animation-name: pg5anime;
-    animation-duration: 15s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-
-}
-
-@keyframes pg5anime {
-    from{
-        transform: translateX(0);
-    }to{
-        transform: translateX(calc(-100% - 20px));
     }
-}
+    .elems{
 
-.elems2{
+        /* background-color: red; */
+        white-space: nowrap;
+        overflow-x: hidden ;
+    }
 
-    /* background-color: red; */
-    white-space: nowrap;
-    overflow-x: hidden ;
-}
+    .elems h1{
+        font-size: 9.5vw;
+        -webkit-text-stroke: 1px #fff;
+        color: transparent;
+        font-weight: 500;
+        text-transform: uppercase;
+        display: inline-block;
+        margin-right: 2vw;
+        animation-name: pg5anime;
+        animation-duration: 15s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
 
-.elems2 h1{
-    font-size: 9.5vw;
-    -webkit-text-stroke: 1px #fff;
-    color: transparent;
-    font-weight: 500;
-    text-transform: uppercase;
-    display: inline-block;
-    margin-right: 2vw;
-    animation-name: pg5anime;
-    animation-duration: 15s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    transform: translateX(calc(-100% - 20px));
-    animation-direction: reverse;
+    }
 
-}
+    @keyframes pg5anime {
+        from{
+            transform: translateX(0);
+        }to{
+            transform: translateX(calc(-100% - 20px));
+        }
+    }
 
-.elems span{
-    font-family: "silk sarif";
-    font-style: italic;
-    color: transparent;
-}
+    .elems2{
 
-.elems2 span{
-    font-family: "silk sarif";
-    font-style: italic;
-    color: transparent;
-}
+        /* background-color: red; */
+        white-space: nowrap;
+        overflow-x: hidden ;
+    }
+
+    .elems2 h1{
+        font-size: 9.5vw;
+        -webkit-text-stroke: 1px #fff;
+        color: transparent;
+        font-weight: 500;
+        text-transform: uppercase;
+        display: inline-block;
+        margin-right: 2vw;
+        animation-name: pg5anime;
+        animation-duration: 15s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        transform: translateX(calc(-100% - 20px));
+        animation-direction: reverse;
+
+    }
+
+    .elems span{
+        font-family: "silk sarif";
+        font-style: italic;
+        color: transparent;
+    }
+
+    .elems2 span{
+        font-family: "silk sarif";
+        font-style: italic;
+        color: transparent;
+    }
 
 
 
@@ -1215,12 +1215,61 @@ body{
     }
 
   
+   
+    
+    
+
+
+
+
+
+
+
+   
+    
+    
+    
     #footer-div{
         display: flex;
         flex-direction: column;
-        gap: 20vw;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 10vw;
+        padding-right: 15vw;
+        padding-top: 1vw;
+        line-height: 4.8vw;
+    }
+    
+    .box{
+        width: 50%;
+        /* background-color: red; */
+    }
+    
+    #footer-div h6{
+        font-size: 3.2vw;
+        margin-bottom: 2.5vw;
     }
     
     
+    #footer-div h5{
+        font-size: 4.5vw;
+        font-weight: 500;
+    }
+    
+    #footer>h5{
+        font-weight: 500;
+        font-size: 3vw;
+    }
+
+
+    #footer .underline:nth-last-child(2){
+        margin: 10vh 0 6vw;
+    }
+
+    #footer>h5 span{
+        font-family: "satisfy";
+        letter-spacing: .3vw;
+    }
+
 
 }
